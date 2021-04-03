@@ -60,3 +60,7 @@ function wetricem() {
         document.getElementById("wrt").value = (parseInt(document.getElementById("wrqpr").value) + parseFloat(document.getElementById("wrgst").value)).toFixed(2);
     }
 }
+
+function gt() {
+    document.getElementById("t").value = (parseFloat(document.getElementById("wt").value) + parseFloat(document.getElementById("rt").value) + parseFloat(document.getElementById("wrt").value)).toFixed(2);
+}
