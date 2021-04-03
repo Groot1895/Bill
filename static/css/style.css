@@ -6,8 +6,7 @@ html {
 
 body {  
   background:whitesmoke;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;  
-  height: 100vh;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;    
 }
 
 #wq,#rq,#wrq{
