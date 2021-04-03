@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karikaalan</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,400i,500" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <script src="static/js/style.js"> </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row pt-2 pb-2 border-bottom border-dark">
+            <div class="col-2 col-lg-6">
+                <label>Content</label>
+            </div>
+            <div class="col-4 col-lg-2 text-end">
+                <label>Kg</label>
+            </div>
+            <div class="col-3 col-lg-2">                    
+                <label>Price / G.S.T</label>
+            </div>
+            <div class="col-3 col-lg-2">
+                <label>Total</label>
+            </div>
+        </div>
+
+        <div class="row pt-2 pb-2 border-bottom">
+            <div class="col-2 col-lg-6">
+                <label>Wheat</label>
+            </div>
+            <div class="col-4 col-lg-2 text-end">
+                <div class="btn-group-sm">
+                    <button type="button" class="btn btn-outline-danger" onclick="wheatm()">-</button>
+                    <input type="number" id="wq" value="0" class="bg-inherit counter" readonly>
+                    <button type="button" class="btn btn-danger" onclick="wheatp()">+</button>             
+                </div>
+            </div>
+            <div class="col-3 col-lg-2">                    
+                <input type="number" id="wqpr" value="0" class="bg-inherit counter" readonly>/<input type="number" id="wgst" value="0" class="bg-inherit counter" readonly>
+            </div>
+            <div class="col-3 col-lg-2">
+                <input type="number" id="wt" value="0" class="bg-inherit counter" readonly>
+            </div>
+        </div>
+        
+        <div class="row pt-2 pb-2 border-bottom">
+            <div class="col-2 col-lg-6">
+                <label>Rice</label>
+            </div>
+            <div class="col-4 col-lg-2 text-end">
+                <div class="btn-group-sm">
+                    <button type="button" class="btn btn-outline-danger" onclick="ricem()">-</button>
+                    <input type="number" value="0" id="rq" class="bg-inherit counter" readonly>
+                    <button type="button" class="btn btn-danger" onclick="ricep()">+</button>              
+                </div>
+            </div>
+            <div class="col-3 col-lg-2">
+                <input type="number" id="rqpr" value="0" class="bg-inherit counter" readonly>/<input type="number" id="rgst" value="0" class="bg-inherit counter" readonly>
+            </div>
+            <div class="col-3 col-lg-2">
+                <input type="number" id="rt" value="0" class="bg-inherit counter" readonly>
+            </div>
+        </div>
+
+        <div class="row pt-2 pb-2 border-bottom">
+            <div class="col-2 col-lg-6">
+                <label>WetRice</label>
+            </div>
+            <div class="col-4 col-lg-2 text-end">
+                <div class="btn-group-sm">
+                    <button type="button" class="btn btn-outline-danger" onclick="wetricem()">-</button>
+                    <input type="number" value="0" id="wrq" class="bg-inherit counter" readonly>
+                    <button type="button" class="btn btn-danger" onclick="wetricep()">+</button>              
+                </div>
+            </div>
+            <div class="col-3 col-lg-2">
+                <input type="number" id="wrqpr" value="0" class="bg-inherit counter" readonly>/<input type="number" id="wrgst" value="0" class="bg-inherit counter" readonly>
+            </div>
+            <div class="col-3 col-lg-2">
+                <input type="number" id="wrt" value="0" class="bg-inherit counter" readonly>
+            </div>
+        </div>
+
+        <div class="row pt-2 pb-2 border-bottom">
+            <div class="col-9 col-lg-10 text-end">
+                <label>Grand Total &#8377;</label>
+            </div>
+            <div class="col-3 col-lg-2">
+                <input type="number" id="t" value="0" class="bg-inherit counter" readonly>
+            </div>                
+        </div>
+        
+    </div>    
+</body>
+</html>

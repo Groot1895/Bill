@@ -1,0 +1,32 @@
+html {  
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body {  
+  background:whitesmoke;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;  
+  height: 100vh;
+}
+
+#wq,#rq,#wrq{
+  -webkit-appearance: textfield;  
+  -moz-appearance: textfield;
+  width: 30px;  
+  text-align: center;
+}
+
+#wqpr,#wgst,#wt,#rqpr,#rgst,#rt,#wrqpr,#wrgst,#wrt,#t{
+  -webkit-appearance: none;  
+  -moz-appearance: textfield;
+  width: 60px;
+}
+
+.bg-inherit {
+  background: inherit;  
+}
+
+.counter {  
+  border: none;
+}
