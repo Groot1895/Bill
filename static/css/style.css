@@ -12,7 +12,7 @@ body {
 #wq,#rq,#wrq{
   -webkit-appearance: textfield;  
   -moz-appearance: textfield;
-  width: 30px;    
+  width: 30px;
 }
 
 #wqpr,#wgst,#wt,#rqpr,#rgst,#rt,#wrqpr,#wrgst,#wrt,#t{
