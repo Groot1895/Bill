@@ -4,6 +4,7 @@ function wheatp() {
     document.getElementById("wqpr").value = parseInt(document.getElementById("wq").value) * wprice;
     document.getElementById("wgst").value = (parseInt(document.getElementById("wq").value) * 0.18 * wprice).toFixed(2);
     document.getElementById("wt").value = (parseInt(document.getElementById("wqpr").value) + parseFloat(document.getElementById("wgst").value)).toFixed(2);
+    gt();
 }
 
 function wheatm() {
@@ -17,6 +18,7 @@ function wheatm() {
         document.getElementById("wgst").value = (parseInt(document.getElementById("wq").value) * 0.18 * wprice).toFixed(2);
         document.getElementById("wt").value = (parseInt(document.getElementById("wqpr").value) + parseFloat(document.getElementById("wgst").value)).toFixed(2);
     }
+    gt();
 }
 
 function ricep() {
@@ -25,6 +27,7 @@ function ricep() {
     document.getElementById("rqpr").value = parseInt(document.getElementById("rq").value) * rprice;
     document.getElementById("rgst").value = (parseInt(document.getElementById("rq").value) * 0.18 * rprice).toFixed(2);
     document.getElementById("rt").value = (parseInt(document.getElementById("rqpr").value) + parseFloat(document.getElementById("rgst").value)).toFixed(2);
+    gt();
 }
 
 function ricem() {
@@ -38,6 +41,7 @@ function ricem() {
         document.getElementById("rgst").value = (parseInt(document.getElementById("rq").value) * 0.18 * rprice).toFixed(2);
         document.getElementById("rt").value = (parseInt(document.getElementById("rqpr").value) + parseFloat(document.getElementById("rgst").value)).toFixed(2);
     }
+    gt();
 }
 
 function wetricep() {
@@ -46,6 +50,7 @@ function wetricep() {
     document.getElementById("wrqpr").value = parseInt(document.getElementById("wrq").value) * wrprice;
     document.getElementById("wrgst").value = (parseInt(document.getElementById("wrq").value) * 0.18 * wrprice).toFixed(2);
     document.getElementById("wrt").value = (parseInt(document.getElementById("wrqpr").value) + parseFloat(document.getElementById("wrgst").value)).toFixed(2);
+    gt();
 }
 
 function wetricem() {
@@ -59,6 +64,7 @@ function wetricem() {
         document.getElementById("wrgst").value = (parseInt(document.getElementById("wrq").value) * 0.18 * wrprice).toFixed(2);
         document.getElementById("wrt").value = (parseInt(document.getElementById("wrqpr").value) + parseFloat(document.getElementById("wrgst").value)).toFixed(2);
     }
+    gt();
 }
 
 function gt() {
