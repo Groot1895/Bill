@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karikaalan</title>
     <link href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,400i,500" rel="stylesheet">
     <link href="static/css/bootstrap.css" rel="stylesheet">
@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="container mt-5">
+        <label id="re"></label>
 
         <table class="table table-sm table-striped">
             <thead>
@@ -24,12 +25,12 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Wheat</th>
+                <th scope="row" id="c">Wheat</th>
                 <td>
                     <div class="btn-group-sm">
                         <button type="button" class="btn btn-outline-danger" onclick="wheatm()"> <strong>-</strong> </button>
                         <input type="number" id="wq" value="0" class="bg-inherit counter" readonly>
-                        <button type="button" class="btn btn-danger" onclick="wheatp()"> <strong>+</strong> </button>             
+                        <button type="button" class="btn btn-danger" onclick="plus()"> <strong>+</strong> </button>             
                     </div>
                 </td>
                 <td>
@@ -43,12 +44,12 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row">Rice</th>
+                <th scope="row" id="c">Rice</th>
                 <td>
                     <div class="btn-group-sm">
                         <button type="button" class="btn btn-outline-danger" onclick="ricem()"> <strong>-</strong> </button>
                         <input type="number" id="rq" value="0" class="bg-inherit counter" readonly>
-                        <button type="button" class="btn btn-danger" onclick="ricep()"> <strong>+</strong> </button>             
+                        <button type="button" class="btn btn-danger" onclick="plus()"> <strong>+</strong> </button>             
                     </div>
                 </td>
                 <td>
