@@ -1,14 +1,13 @@
-function plus() {
-    document.getElementById("re").innerHTML = document.getElementById("c").innerHTML;
-    //var wprice = 12;
-    //document.getElementById("wq").value = parseInt(document.getElementById("wq").value) + 1;
-    //document.getElementById("wqpr").value = parseInt(document.getElementById("wq").value) * wprice;
-    //document.getElementById("wgst").value = (parseInt(document.getElementById("wq").value) * 0.18 * wprice).toFixed(2);
-    //document.getElementById("wt").value = (parseInt(document.getElementById("wqpr").value) + parseFloat(document.getElementById("wgst").value)).toFixed(2);
-    //gt();
+function wheatp() {
+    var wprice = 12;
+    document.getElementById("wq").value = parseInt(document.getElementById("wq").value) + 1;
+    document.getElementById("wqpr").value = parseInt(document.getElementById("wq").value) * wprice;
+    document.getElementById("wgst").value = (parseInt(document.getElementById("wq").value) * 0.18 * wprice).toFixed(2);
+    document.getElementById("wt").value = (parseInt(document.getElementById("wqpr").value) + parseFloat(document.getElementById("wgst").value)).toFixed(2);
+    gt();
 }
 
-/*function sulp() {
+function wheatm() {
     var wprice = 12;
     if (parseInt(document.getElementById("wq").value) == 0) {
         document.getElementById("wq").value = 0;
@@ -19,7 +18,7 @@ function plus() {
         document.getElementById("wgst").value = (parseInt(document.getElementById("wq").value) * 0.18 * wprice).toFixed(2);
         document.getElementById("wt").value = (parseInt(document.getElementById("wqpr").value) + parseFloat(document.getElementById("wgst").value)).toFixed(2);
     }
-    //gt();
+    gt();
 }
 
 function ricep() {
@@ -66,7 +65,7 @@ function wetricem() {
         document.getElementById("wrt").value = (parseInt(document.getElementById("wrqpr").value) + parseFloat(document.getElementById("wrgst").value)).toFixed(2);
     }
     gt();
-}*/
+}
 
 function gt() {
     document.getElementById("t").value = (parseFloat(document.getElementById("wt").value) + parseFloat(document.getElementById("rt").value) + parseFloat(document.getElementById("wrt").value)).toFixed(2);
