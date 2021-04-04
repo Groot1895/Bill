@@ -10,76 +10,81 @@
     <script src="static/js/style.js"> </script>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5">        
 
-        <label id="re" ></label>
-
-        <div class="pt-3 pb-3">
-            <input type="text" class="form-control" id="search" onkeyup="tsort()" placeholder="Search ...">
-        </div>        
-        <table class="table table-sm table-striped" id="table">
-            <thead>
-                <tr>
-                    <th>Products</th>
-                    <th>Kg</th>
-                    <th>Price</th>
-                    <th>G.S.T</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>                
-                <tr>
-                    <td>Wheat</td>
-                    <td>
-                        <div class="btn-group-sm">
-                            <button type="button" class="btn btn-outline-danger" onclick="wheatm()"> <strong>-</strong> </button>
-                            <input type="number" id="wq" value="0" class="bg-inherit counter" readonly>
-                            <button type="button" class="btn btn-danger" onclick="wheatp()"> <strong>+</strong> </button>
-                        </div>
+        <form>
+            <div class="pt-3 pb-3">
+                <input type="text" class="form-control" id="search" onkeyup="tsort()" placeholder="Search ...">
+            </div>        
+            <table class="table table-sm table-striped" id="table">
+                <thead>
+                    <tr>
+                        <th>Products</th>
+                        <th>Kg</th>
+                        <th>Price</th>
+                        <th>G.S.T</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>                
+                    <tr>
+                        <td>Wheat</td>
+                        <td>
+                            <div class="btn-group-sm">
+                                <button type="button" class="btn btn-outline-danger" onclick="wheatm()"> <strong>-</strong> </button>
+                                <input type="number" id="wq" value="0" class="bg-inherit counter" readonly>
+                                <button type="button" class="btn btn-danger" onclick="wheatp()"> <strong>+</strong> </button>
+                            </div>
+                        </td>
+                        <td><input type="number" id="wqpr" value="0" class="bg-inherit counter" readonly></td>
+                        <td><input type="number" id="wgst" value="0" class="bg-inherit counter" readonly></td>
+                        <td><input type="number" id="wt" value="0" class="bg-inherit counter" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Rice</td>
+                        <td>
+                            <div class="btn-group-sm">
+                                <button type="button" class="btn btn-outline-danger" onclick="ricem()"> <strong>-</strong> </button>
+                                <input type="number" id="rq" value="0" class="bg-inherit counter" readonly>
+                                <button type="button" class="btn btn-danger" onclick="ricep()"> <strong>+</strong> </button>
+                            </div>
+                        </td>
+                        <td><input type="number" id="rqpr" value="0" class="bg-inherit counter" readonly></td>
+                        <td><input type="number" id="rgst" value="0" class="bg-inherit counter" readonly></td>
+                        <td><input type="number" id="rt" value="0" class="bg-inherit counter" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>WetRice</td>
+                        <td>
+                            <div class="btn-group-sm">
+                                <button type="button" class="btn btn-outline-danger" onclick="wetricem()"> <strong>-</strong> </button>
+                                <input type="number" id="wrq" value="0" class="bg-inherit counter" readonly>
+                                <button type="button" class="btn btn-danger" onclick="wetricep()"> <strong>+</strong> </button>
+                            </div>
+                        </td>
+                        <td><input type="number" id="wrqpr" value="0" class="bg-inherit counter" readonly></td>
+                        <td><input type="number" id="wrgst" value="0" class="bg-inherit counter" readonly></td>
+                        <td><input type="number" id="wrt" value="0" class="bg-inherit counter" readonly></td>
+                    </tr>               
+                </tbody>
+            </table>
+    
+            <table class="table table-sm">            
+                <tbody>              
+                  <tr>
+                    <td class="text-end">Grand Total &#8377;</td>                
+                    <td class="text-center">
+                        <input type="number" id="t" value="0" class="bg-inherit counter" readonly>
                     </td>
-                    <td><input type="number" id="wqpr" value="0" class="bg-inherit counter" readonly></td>
-                    <td><input type="number" id="wgst" value="0" class="bg-inherit counter" readonly></td>
-                    <td><input type="number" id="wt" value="0" class="bg-inherit counter" readonly></td>
-                </tr>
-                <tr>
-                    <td>Rice</td>
-                    <td>
-                        <div class="btn-group-sm">
-                            <button type="button" class="btn btn-outline-danger" onclick="ricem()"> <strong>-</strong> </button>
-                            <input type="number" id="rq" value="0" class="bg-inherit counter" readonly>
-                            <button type="button" class="btn btn-danger" onclick="ricep()"> <strong>+</strong> </button>
-                        </div>
-                    </td>
-                    <td><input type="number" id="rqpr" value="0" class="bg-inherit counter" readonly></td>
-                    <td><input type="number" id="rgst" value="0" class="bg-inherit counter" readonly></td>
-                    <td><input type="number" id="rt" value="0" class="bg-inherit counter" readonly></td>
-                </tr>
-                <tr>
-                    <td>WetRice</td>
-                    <td>
-                        <div class="btn-group-sm">
-                            <button type="button" class="btn btn-outline-danger" onclick="wetricem()"> <strong>-</strong> </button>
-                            <input type="number" id="wrq" value="0" class="bg-inherit counter" readonly>
-                            <button type="button" class="btn btn-danger" onclick="wetricep()"> <strong>+</strong> </button>
-                        </div>
-                    </td>
-                    <td><input type="number" id="wrqpr" value="0" class="bg-inherit counter" readonly></td>
-                    <td><input type="number" id="wrgst" value="0" class="bg-inherit counter" readonly></td>
-                    <td><input type="number" id="wrt" value="0" class="bg-inherit counter" readonly></td>
-                </tr>                
-            </tbody>
-        </table>
-
-        <table class="table table-sm">            
-            <tbody>              
-              <tr>
-                <td class="text-end">Grand Total &#8377;</td>                
-                <td class="text-center">
-                    <input type="number" id="t" value="0" class="bg-inherit counter" readonly>
-                </td>
-              </tr>
-            </tbody>
-        </table>        
+                  </tr>
+                </tbody>
+            </table>
+            
+            <div class="btn-group d-flex">
+                <button type="reset" class="btn btn-outline-danger">Clear</button>
+                <button type="button" class="btn btn-danger" onclick="window.print()">Submit</button>
+            </div>
+        </form>        
         
     </div>    
 </body>
