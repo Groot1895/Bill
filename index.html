@@ -32,7 +32,7 @@
                         <td>
                             <div class="btn-group-sm">
                                 <button type="button" class="btn btn-outline-danger" onclick="wheatm()"> <strong>-</strong> </button>
-                                <input type="number" id="wq" value="0" class="bg-inherit counter" readonly>
+                                <input type="number" id="wq" value="0" class="bg-inherit counter" onkeyup="wheatp()">
                                 <button type="button" class="btn btn-danger" onclick="wheatp()"> <strong>+</strong> </button>
                             </div>
                         </td>
@@ -45,7 +45,7 @@
                         <td>
                             <div class="btn-group-sm">
                                 <button type="button" class="btn btn-outline-danger" onclick="ricem()"> <strong>-</strong> </button>
-                                <input type="number" id="rq" value="0" class="bg-inherit counter" readonly>
+                                <input type="number" id="rq" value="0" class="bg-inherit counter">
                                 <button type="button" class="btn btn-danger" onclick="ricep()"> <strong>+</strong> </button>
                             </div>
                         </td>
@@ -58,7 +58,7 @@
                         <td>
                             <div class="btn-group-sm">
                                 <button type="button" class="btn btn-outline-danger" onclick="wetricem()"> <strong>-</strong> </button>
-                                <input type="number" id="wrq" value="0" class="bg-inherit counter" readonly>
+                                <input type="number" id="wrq" value="0" class="bg-inherit counter">
                                 <button type="button" class="btn btn-danger" onclick="wetricep()"> <strong>+</strong> </button>
                             </div>
                         </td>
@@ -84,8 +84,8 @@
                 <button type="reset" class="btn btn-outline-danger">Clear</button>
                 <button type="button" class="btn btn-danger" onclick="window.print()">Submit</button>
             </div>
-        </form>        
-        
+        </form>
+                
     </div>    
 </body>
 </html>
