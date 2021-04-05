@@ -90,11 +90,3 @@ function tsort() {
         }
     }
 }
-
-function printDiv() {
-    var printContents = document.getElementById("pp").innerHTML;
-    w = window.open();
-    w.document.write(printContents);
-    w.print();
-    w.close();
-}
